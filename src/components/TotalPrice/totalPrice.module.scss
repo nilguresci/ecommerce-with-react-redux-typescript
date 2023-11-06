@@ -1,0 +1,10 @@
+.totalNumber {
+  margin-left: 5px;
+  color: blue;
+}
+
+@media (max-width: 768px) {
+  .totalNumber {
+    display: none;
+  }
+}

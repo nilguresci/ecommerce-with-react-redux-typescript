@@ -1,0 +1,49 @@
+.basket {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 20%;
+  align-items: flex-start;
+  padding: 1rem 0 0 1rem;
+
+  .basketListContainer {
+    .basketCardItem {
+      display: flex;
+      margin-bottom: 0.5rem;
+      align-items: center;
+      justify-content: space-between;
+
+      .basketCardItemInfo {
+        .name {
+          font-size: 14px;
+          overflow-wrap: break-word;
+          white-space: pre-line;
+          width: 100px;
+        }
+
+        .price {
+          font-size: 12px;
+          color: blue;
+        }
+      }
+      .count {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+
+  .checkout {
+    margin-top: 2rem;
+    .info {
+      display: flex;
+    }
+    .checkoutBtn {
+      margin-top: 1rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .basket {
+    display: none;
+  }
+}

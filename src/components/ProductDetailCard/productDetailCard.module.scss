@@ -1,0 +1,35 @@
+.cardContainer {
+  display: flex;
+  justify-content: flex-end;
+  flex-basis: 65%;
+  margin: 1rem 2rem 2rem 2rem;
+
+  .cardContent {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    .infoAndCheckout {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 50%;
+      h5 {
+        color: blue;
+      }
+    }
+    .description {
+      height: 50%;
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .cardBody {
+    flex-direction: column;
+    img {
+      width: 250px;
+    }
+  }
+}

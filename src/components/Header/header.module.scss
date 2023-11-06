@@ -1,0 +1,59 @@
+.left {
+  display: flex;
+  flex-basis: 70%;
+  justify-content: flex-start;
+  align-items: center;
+  .companyName {
+    display: flex;
+    flex-basis: 20vw;
+    justify-content: center;
+  }
+  .search {
+    margin-left: 0.7rem;
+    width: 40%;
+  }
+}
+
+.right {
+  // margin-right: 10%; //mobilde bu marginlerin kaldırılması gerekiyor
+
+  display: flex;
+  flex-basis: 20%;
+  justify-content: flex-start;
+  padding-left: 1rem;
+  .basketInfo {
+    display: flex;
+    margin-right: 15px;
+    align-items: center;
+    svg {
+      margin-right: 9px;
+    }
+    .totalNumber {
+      margin-left: 15px;
+    }
+  }
+  .userInfo {
+    display: flex;
+    align-items: center;
+    svg {
+      margin-right: 9px;
+    }
+    .userName {
+      margin-left: 5px;
+      color: white;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .left {
+    flex-basis: 50%;
+  }
+  .right {
+    flex-basis: 40%;
+    justify-content: flex-end;
+  }
+  .userName {
+    display: none;
+  }
+}
